@@ -9,6 +9,8 @@ using namespace std;
 #define FRIDAY (1 << 5) // 32
 #define SATURDAY (1 << 6) // 64
 
+#define TRANSFORM(day) (pow(2, day - 1))
+
 #define SUNDAY_LIT "Sunday"
 #define MONDAY_LIT "Monday"
 #define TUESDAY_LIT "Tuesday"
@@ -23,7 +25,7 @@ int main()
     cout << "Enter number of day:" << endl;
     int day;
     cin >> day;
-    day = pow(2, day - 1);
+    day = TRANSFORM(day);
 
     switch (day) {
         case SUNDAY:
