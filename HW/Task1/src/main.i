@@ -44804,13 +44804,13 @@ namespace __gnu_cxx
 
 # 3 "main.cpp"
 using namespace std;
-# 21 "main.cpp"
+# 23 "main.cpp"
 int main()
 {
     cout << "Enter number of day:" << endl;
     int day;
     cin >> day;
-    day = pow(2, day - 1);
+    day = (pow(2, day - 1));
 
     switch (day) {
         case (1 << 0):
